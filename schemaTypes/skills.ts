@@ -10,7 +10,12 @@ export default {
     },
     {
       name: 'bgColor',
-      title: 'BgColor',
+      title: 'Background Color',
+      type: 'string'
+    },
+    {
+      name: 'type',
+      title: 'Type',
       type: 'string'
     },
     {
@@ -20,6 +25,24 @@ export default {
       options: {
         hotspot: true
       }
+    },
+    {
+      name: 'icon_svg',
+      type: 'document',
+      title: 'IconSVG',
+      fields: [
+        {
+          name: 'title',
+          type: 'string',
+          title: 'Icon Title'
+        },
+        {
+          name: 'svgUrl',
+          type: 'url',
+          title: 'SVG URL',
+          description: 'Enter the URL of the SVG icon.'
+        }
+      ]
     }
   ]
 }

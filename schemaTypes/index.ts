@@ -4,16 +4,22 @@ import brands from './brands'
 import abouts from './abouts'
 import skills from './skills'
 import workExperience from './workExperience'
-import experiences from './experiences'
+import experience from './experience'
+// import experiences from './experiences'
 import contact from './contact'
+import bio from './bio'
+import headerIcons from './headerIcons'
 
 export const schemaTypes = [
   works,
   testimonials,
   brands,
   abouts,
+  bio,
   skills,
   workExperience,
-  experiences,
-  contact
+  experience,
+  // experiences,
+  contact,
+  headerIcons
 ]

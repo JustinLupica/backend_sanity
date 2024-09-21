@@ -1,18 +1,27 @@
 export default {
-  name: 'workExperience',
-  title: 'Work Experience',
+  name: 'post',
+  title: 'Post',
   type: 'document',
   fields: [
-    { name: 'name', title: 'name', type: 'string' },
     {
-      name: 'company',
-      title: 'Company',
+      name: 'title',
+      title: 'Title',
       type: 'string'
     },
     {
-      name: 'desc',
-      title: 'Desc',
-      type: 'string'
+      name: 'body',
+      title: 'Body',
+      type: 'array',
+      of: [
+        {
+          type: 'block',
+          styles: [{ title: 'Normal', value: 'normal' }],
+          lists: [
+            { title: 'Bullet', value: 'bullet' },
+            { title: 'Numbered', value: 'number' }
+          ]
+        }
+      ]
     }
   ]
 }

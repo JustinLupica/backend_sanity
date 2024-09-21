@@ -32,7 +32,30 @@ export default {
         hotspot: true
       }
     },
-
+    {
+      name: 'technologies',
+      title: 'Tech Stack',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          name: 'technologyItem',
+          title: 'Technology Item',
+          fields: [
+            {
+              name: 'technology',
+              title: 'Technology',
+              type: 'string'
+            },
+            {
+              name: 'icon',
+              title: 'Icon',
+              type: 'image'
+            }
+          ]
+        }
+      ]
+    },
     {
       name: 'tags',
       title: 'Tags',

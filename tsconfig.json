@@ -12,6 +12,11 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "schemaTypes/workExperience.js",
+    "schemaTypes/workExperience.js"
+  ],
   "exclude": ["node_modules"]
 }
