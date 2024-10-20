@@ -4,9 +4,19 @@ export default {
   type: 'document',
   fields: [
     {
-      name: 'text',
-      title: 'Bio',
-      type: 'string'
+      name: 'body',
+      title: 'Body',
+      type: 'array',
+      of: [
+        {
+          type: 'block',
+          styles: [{ title: 'Normal', value: 'normal' }],
+          lists: [
+            { title: 'Bullet', value: 'bullet' },
+            { title: 'Numbered', value: 'number' }
+          ]
+        }
+      ]
     }
   ]
 }
